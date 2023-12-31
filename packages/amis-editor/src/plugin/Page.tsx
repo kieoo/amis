@@ -177,6 +177,18 @@ export class PagePlugin extends BasePlugin {
                   },
                   getSchemaTpl('pageTitle'),
                   getSchemaTpl('pageSubTitle'),
+                  {
+                    name: 'targetLink',
+                    type: 'input-text',
+                    placeholder: 'http://',
+                    label: tipedLabel('外链地址', '外部平台,支持直达; 不填默认为当前页')
+                  },
+                  {
+                    name: 'iconLink',
+                    type: 'input-text',
+                    placeholder: 'http://',
+                    label: tipedLabel('页面icon地址', '用于dashboard介绍页icon展示')
+                  },
                   getSchemaTpl('remark', {
                     label: '标题提示',
                     hiddenOn:
